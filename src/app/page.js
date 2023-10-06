@@ -67,7 +67,7 @@ export default function Home() {
         }
       }
     } catch (err) {
-      console.log('Err while fetching products', { err });
+      console.error('Err while fetching products', { err });
     } finally {
       setIsLoading(false);
     }
