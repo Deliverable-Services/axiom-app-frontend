@@ -65,7 +65,6 @@ const ProductVariations = ({ variations: initialVariations, formula }) => {
   };
 
   const handleHeight = (variant) => {
-    console.log(selectedVariations[variant?.title].configs.minHeight)
     if(customSize.height < selectedVariations[variant?.title].configs.minHeight){
         setOpen(true)
         setError(selectedVariations[variant?.title].configs.minSizeErrorMessage)
